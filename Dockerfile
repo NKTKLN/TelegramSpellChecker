@@ -5,7 +5,7 @@ WORKDIR /app
 
 # Install build dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    build-essential curl unzip && \
+    build-essential curl unzip openjdk-17-jre-headless && \
     rm -rf /var/lib/apt/lists/*
 
 # Install Poetry
@@ -23,5 +23,5 @@ RUN poetry config virtualenvs.create false && \
 COPY . .
 
 # Set the entry point
-ENTRYPOINT ["python", "-m", "bot.main"]
+ENTRYPOINT ["python", "-m", "app.main"]
 CMD []
