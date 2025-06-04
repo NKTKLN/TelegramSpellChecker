@@ -1,0 +1,106 @@
+# ========================
+# Python bytecode/cache
+# ========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# ========================
+# Poetry & Virtual Envs
+# ========================
+.env
+.venv/
+venv/
+env/
+
+# ========================
+# Build artifacts
+# ========================
+build/
+dist/
+*.egg-info/
+*.whl
+
+# ========================
+# IDEs / Editors
+# ========================
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# ========================
+# Logs & Temporary Files
+# ========================
+*.log
+tmp/
+tmp.*
+messages.db*
+
+# ========================
+# Jupyter Notebooks
+# ========================
+.ipynb_checkpoints/
+test.ipynb
+*.nbconvert.ipynb
+
+# ========================
+# Coverage / Testing
+# ========================
+.coverage
+coverage.xml
+.cache/
+.hypothesis/
+
+# ========================
+# Type checker / linters
+# ========================
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# ========================
+# Security & Secrets
+# ========================
+*.env
+*.env.*
+*.secret
+*.token
+*.key
+*.pem
+*.session
+*.session-journal
+
+# ========================
+# Training / ML outputs
+# ========================
+checkpoints/
+output/
+model/
+runs/                # e.g. for TensorBoard or wandb
+
+# ========================
+# nbQA artifacts
+# ========================
+__nbqa_cache__/
+
+# ========================
+# Custom ignore rules
+# ========================
+Todo.md
+
+# ========================
+# Exceptions (keep files)
+# ========================
+!data/raw/*.json
+!example*.*
+!.env.example
+
+# ========================
+# System files
+# ========================
+.DS_Store
+Thumbs.db
+desktop.ini
